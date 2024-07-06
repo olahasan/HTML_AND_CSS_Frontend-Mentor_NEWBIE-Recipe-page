@@ -1,0 +1,247 @@
+/* Start Variables */
+:root {
+  /* Primary */
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+
+  --radius: 15px;
+}
+/* End Variables */
+
+/* components */
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-uniquifier {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+/* components */
+
+/* fonts */
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-one {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+/* fonts */
+
+/* start global rules */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Outfit", "Young Serif";
+  background-color: var(--Eggshell);
+}
+
+.parent {
+  background-color: gold;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin: 30px 30px 30px 0;
+  border-top: 1px solid var(--Light-Grey);
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    /* width: 800px; */
+  }
+}
+/* end global rules */
+
+.all {
+  margin: 60px 0;
+}
+.all .container .menue {
+  border-radius: var(--radius);
+  background-color: var(--White);
+  padding: 25px;
+  background-size: contain;
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+.all .container .menue .image img {
+  border-style: none;
+  max-width: 100%;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+.all .container .menue h3 {
+  font-size: 25px;
+}
+.all .container .menue p {
+  font-size: 15px;
+  color: var(--Wenge-Brown);
+}
+
+/* start Preparation */
+
+.all .container .menue .preparation {
+  background-color: var(--Rose-White);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+.all .container .menue .preparation h5 {
+  margin: 0;
+  color: var(--Dark-Raspberry);
+}
+.all .container .menue .preparation ul {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  line-height: 1.7;
+}
+.all .container .menue .preparation ul li {
+  color: var(--Wenge-Brown);
+}
+.all .container .menue .preparation ul li::marker {
+  color: var(--Nutmeg);
+  font-size: 10px;
+}
+.all .container .menue .preparation ul li span {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--Wenge-Brown);
+}
+/* end Preparation */
+
+/* start ingredients */
+.all .container .menue .ingredients h5 {
+  color: var(--Nutmeg);
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+.all .container .menue .ingredients ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.7;
+  font-size: 15px;
+  color: var(--Wenge-Brown);
+}
+
+.all .container .menue .ingredients ul li::marker {
+  color: var(--Nutmeg);
+  font-size: 10px;
+}
+/* end ingredients */
+
+/* start instructions */
+.all .container .menue .instructions h5 {
+  color: var(--Nutmeg);
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+.all .container .menue .instructions ol {
+  padding-left: 20px;
+  font-size: 15px;
+  color: var(--Wenge-Brown);
+}
+.all .container .menue .instructions ol li {
+  margin-bottom: 10px;
+}
+.all .container .menue .instructions ol li::marker {
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+.all .container .menue .instructions ol li span {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--Wenge-Brown);
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+/* end instructions */
+
+/* start nutrition */
+.all .container .menue .nutrition > div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.all .container .menue .nutrition > div + hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin: 15px 30px 15px 0;
+  border-top: 1px solid var(--Light-Grey);
+}
+.all .container .menue .nutrition > div:last-child {
+  padding-bottom: 20px;
+}
+.all .container .menue .nutrition > div span:first-child {
+  flex-basis: 40%;
+}
+.all .container .menue .nutrition > div span:last-child {
+  flex-basis: 50%;
+  color: #854632;
+  font-weight: 800;
+}
+.all .container .menue .nutrition h5 {
+  color: var(--Nutmeg);
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+.all .container .menue .nutrition p {
+  font-size: 15px;
+  color: var(--Wenge-Brown);
+  padding-bottom: 20px;
+}
+/* end nutrition */
