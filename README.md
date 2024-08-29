@@ -85,5 +85,5 @@ platform for practicing front-end development skills.
 
 ### Author Frontend Mentor
 
-Frontend Mentor: @olahasan
+Frontend Mentor: @olahasan<br>
 GitHub: @olahasan
